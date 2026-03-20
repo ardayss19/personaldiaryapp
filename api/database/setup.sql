@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS diary;
+
+CREATE TABLE diary (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    date DATE NOT NULL,
+    time TIME NOT NULL,
+    category VARCHAR (30) NOT NULL,
+    text VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+ 
